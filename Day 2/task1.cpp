@@ -3,8 +3,6 @@
 #include <stdio.h>
 #include <fstream>
 
-using namespace std;
-
 int calculatePoints(char enemy, char move)
 {
     unsigned ans = 0;
@@ -25,6 +23,6 @@ int main()
     {
         ans += calculatePoints(str[0], str[2]);
     }
-    cout << ans;
+    std::cout << ans;
     return 0;
 }
